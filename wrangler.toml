@@ -4,7 +4,7 @@ workers_dev = true
 routes = [
 	{pattern = "cdn.tudubucket.dev/*", zone_name = "tudubucket.dev"}
 ]
-
+ 
 compatibility_date = "2022-10-31"
 compatibility_flags = ["nodejs_compat"]
 main = "./dist/index.mjs"
