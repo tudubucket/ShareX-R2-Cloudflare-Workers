@@ -72,7 +72,7 @@ router.post('/upload', authMiddleware, async (request, env) => {
 	} catch (error) {
 		return new Response(JSON.stringify({
 			success: false,
-			message: 'Error occured writing to R2',
+			message: 'Error occurred writing to R2',
 			error: {
 				name: error.name,
 				message: error.message,

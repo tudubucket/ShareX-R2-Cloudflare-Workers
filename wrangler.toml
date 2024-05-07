@@ -1,9 +1,8 @@
 name = "sharex-r2-cloudflare-workers"
-account_id = "522ed7942a6ec29727e101623a48ea76"
+account_id = "0f6cb2c2c007f7ca26b779954906e1d5"
 workers_dev = true
 routes = [
-	{pattern = "r2-sharex.jross.me/*", zone_name = "jross.me"},
-	{pattern = "i.james.pub/*", zone_name = "james.pub"}
+	{pattern = "cdn.tudubucket.dev/*", zone_name = "tudubucket.dev"}
 ]
 
 compatibility_date = "2022-10-31"
@@ -14,8 +13,8 @@ main = "./dist/index.mjs"
 command = "npm run build"
 
 [[r2_buckets]]
-bucket_name = "sharex-files"
-preview_bucket_name = "sharex-files"
+bucket_name = "sharex-uploads"
+preview_bucket_name = "sharex-uploads"
 binding = "R2_BUCKET"
 
 [vars]
